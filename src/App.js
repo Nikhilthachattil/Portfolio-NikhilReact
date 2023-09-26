@@ -24,10 +24,7 @@ function App() {
           <div className="z-10 ">
             <Routes>
               <Route path="/" element={<Home />}></Route>
-              <Route
-                path="/Nikhil_react_portfolio.git"
-                element={<Home />}
-              ></Route>
+              <Route path="/nikhil-react-project" element={<Home />}></Route>
               <Route path="/Profile" element={<Profile />}></Route>
               <Route path="/Apps" element={<Apps />}></Route>
               <Route path="/Contact" element={<Contact />}></Route>
