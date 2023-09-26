@@ -24,7 +24,7 @@ function App() {
           <div className="z-10 ">
             <Routes>
               <Route path="/" element={<Home />}></Route>
-              <Route path="/nikhilreact-project" element={<Home />}></Route>
+              <Route path="/NikhilReact-Portfolio" element={<Home />}></Route>
               <Route path="/Profile" element={<Profile />}></Route>
               <Route path="/Apps" element={<Apps />}></Route>
               <Route path="/Contact" element={<Contact />}></Route>
