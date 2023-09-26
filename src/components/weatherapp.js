@@ -7,7 +7,7 @@ function WeatherApp() {
   const [district, setDistrict] = useState("");
   const fetchWeather = () => {
     return axios.get(
-      `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${district}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${district}&aqi=no`
     );
   };
   const { data, refetch } = useQuery("weather", fetchWeather, {

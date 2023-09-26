@@ -1,18 +1,35 @@
 import React from "react";
 import img4 from "../assets/logo.png";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
   const [expanded, setExpanded] = useState(true);
+  const menuBarRef = useRef(null);
   const toggleMenu = () => {
     setExpanded(!expanded);
   };
+  const closeMenu = () => {
+    setExpanded(false);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (menuBarRef.current && !menuBarRef.current.contains(event.target)) {
+      closeMenu();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  });
 
   return (
     <header>
       <nav className="cursor-pointer mx-auto flex  min-h-full w-full justify-between relative py-2 bg-dred ">
-        <div className="z-40 w-[40px] h-[40px] my-2 py-3 items-center">
+        <div className="z-40 w-[40px] h-[40px] my-4 py-3 items-center">
           <img className="static z-30 w-[40px] mx-7" src={img4} alt="" />
         </div>
         <div
@@ -68,7 +85,7 @@ function Header() {
         </div>
         <div
           id="menu-btn"
-          className="z-30 fixed right-0 text-white px-5  lg:hidden py-5"
+          className="z-30 static right-0 text-white px-5  lg:hidden py-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +95,7 @@ function Header() {
             stroke="currentColor"
             className="w-6 h- cursor-pointer text-dred p-1 bg-dcream rounded-full "
             onClick={toggleMenu}
+            onChange={handleOutsideClick}
           >
             <path
               strokeLinecap="round"

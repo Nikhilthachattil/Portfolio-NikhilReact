@@ -118,7 +118,7 @@ function Todo() {
           <div className="">
             <button
               className={`${
-                isCompleteScreen === false && "active"
+                !isCompleteScreen === false && "active"
               } focus:bg-dcream focus:text-mgreen 
               mx-2 my-2 px-5 rounded-xl bg-dred shadow-lg`}
               onClick={() => setIsCompleteScreen(false)}
@@ -199,10 +199,7 @@ function Todo() {
                           <h1 className="text-mgreen py-1 uppercase">
                             {item.title}
                           </h1>
-                          <h3 className="text-dred py-1">
-                            {" "}
-                            {item.description}
-                          </h3>
+                          <h3 className="text-dred py-1">{item.description}</h3>
                           <p className="text-dred py-1 text-xs">
                             completed on:
                             {item.completedOn}
