@@ -65,12 +65,6 @@ function Header() {
                 Contact
               </li>
             </NavLink>
-            <li
-              href="/"
-              class="px-8 py-2 text-white  border-[1px] border-green-500 rounded-lg shadow-md mb-5 hover:bg-green-500 hover:text-white"
-            >
-              Resume
-            </li>
           </ul>
         </div>
         <div

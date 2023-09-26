@@ -6,8 +6,8 @@ import Home from "./components/Home";
 import SideBar from "./components/sideBar";
 import Profile from "./components/Profile";
 import Contact from "./components/contact";
-import Apps from "./components/Todo";
-import Resume from "./components/Resume";
+import Apps from "./components/Apps";
+
 import Skill from "./components/skill";
 import Footer from "./components/footer";
 
@@ -28,7 +28,7 @@ function App() {
               <Route path="/Profile" element={<Profile />}></Route>
               <Route path="/Apps" element={<Apps />}></Route>
               <Route path="/Contact" element={<Contact />}></Route>
-              <Route path="/Resume" element={<Resume />}></Route>
+             
               <Route path="/Skill" element={<Skill />}></Route>
             </Routes>
           </div>
