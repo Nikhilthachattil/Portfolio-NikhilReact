@@ -17,11 +17,11 @@ function contact() {
     );
   }
   return (
-    <section>
+    <section className="flex flex-col place-content-center">
       <div className="font-thin font-Satisfy text-2xl text-dgreen py-2">
         <h1 className="px-5">Contact : </h1>
       </div>
-      <div className="relative block text-xs py-5 m-10 md:m-1 md:mx-5 md:flex md:flex-wrap md:gap-5  text-dgreen backdrop-blur-lg place-content-center bg-mgreen lg:mx-12 rounded-xl md:rounded-[50px]">
+      <div className="relative block text-xs py-5 mx-5  md:m-1 md:mx-5 md:flex md:flex-wrap md:gap-5  text-dgreen backdrop-blur-lg place-content-center bg-mgreen lg:mx-12 rounded-xl md:rounded-[50px]">
         <div className="md:flex-col mx-5  md:w-2/6 gap-2 md:px-6  bg-dcream shadow-inner backdrop-blur-lg rounded-xl">
           <h1 className="text-mgreen py-5 md:text-2xl mx-5">THANK YOU</h1>
 
@@ -160,7 +160,7 @@ function contact() {
               name="message"
               id="message"
               placeholder="Your Message"
-              class="md:w-full w-full m-2 bg-mgreen rounded-xl text-center resize-none"
+              class="md:w-full w-full my-2 bg-mgreen rounded-xl text-center resize-none"
               required
             ></textarea>
           </div>
