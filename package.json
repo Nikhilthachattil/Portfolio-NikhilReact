@@ -1,8 +1,8 @@
 {
   "name": "nikhil-portfolio",
-  " homepage": "http://Nikhilthachattil.github.io/NikhilReact-Portfolio",
+  " homepage": "http://Nikhilthachattil.github.io/Portfolio-NikhilReact",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
