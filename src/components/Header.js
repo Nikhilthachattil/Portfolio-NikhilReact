@@ -1,45 +1,19 @@
 import React from "react";
 import img4 from "../assets/logo.png";
-import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
+import MenuBar from "./menuBar";
 
 function Header() {
-  const [expanded, setExpanded] = useState(true);
-  const menuBarRef = useRef(null);
-  const toggleMenu = () => {
-    setExpanded(!expanded);
-  };
-  const closeMenu = () => {
-    setExpanded(false);
-  };
-
-  const handleOutsideClick = (event) => {
-    if (menuBarRef.current && !menuBarRef.current.contains(event.target)) {
-      closeMenu();
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("click", handleOutsideClick);
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-  });
-
   return (
     <header>
-      <nav className="cursor-pointer mx-auto flex  min-h-full w-full justify-between relative py-2 bg-dred ">
-        <div className="z-40 w-[40px] h-[40px] my-4 py-3 items-center">
+      <nav className="cursor-pointer mx-auto flex min-h-full w-full justify-between relative bg-dred">
+        <div className="z-40 w-[40px] h-[40px] my-4 py-5 md:py-3 items-center">
           <img className="static z-30 w-[40px] mx-7" src={img4} alt="" />
         </div>
-        <div
-          className={`${
-            expanded ? "hidden" : "block"
-          } lg:block  overflow-hidden`}
-        >
+        <div className={` lg:block overflow-hidden`}>
           <ul
-            className=" right-0 absolute items-center text-justify justify-between gap-10
-            top-0 px-16 z-30 text-sm rounded-xl lg:flex py-5 backdrop-blur-3xl lg:backdrop-blur-0"
+            className=" items-center text-justify justify-between gap-10 hidden place-content-center align-middle mt-3 
+             px-16  lg:flex lg:backdrop-blur-0"
           >
             <NavLink to="/">
               <li
@@ -76,7 +50,7 @@ function Header() {
             <NavLink to="/Contact">
               <li
                 href="/"
-                class="px-8 py-2 text-white  border-[1px] border-green-500 rounded-lg shadow-md mb-5 hover:bg-green-500 hover:text-white"
+                className="px-8 py-2 text-white  border-[1px] border-green-500 rounded-lg shadow-md mb-5 hover:bg-green-500 hover:text-white"
               >
                 Contact
               </li>
@@ -85,24 +59,9 @@ function Header() {
         </div>
         <div
           id="menu-btn"
-          className="z-30 static right-0 text-white px-5  lg:hidden py-5"
+          className="z-30 static right-0 text-white px-5  lg:hidden py-1"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={3}
-            stroke="currentColor"
-            className="w-6 h- cursor-pointer text-dred p-1 bg-dcream rounded-full "
-            onClick={toggleMenu}
-            onChange={handleOutsideClick}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
+          <MenuBar />
         </div>
       </nav>
     </header>

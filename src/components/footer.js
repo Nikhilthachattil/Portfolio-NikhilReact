@@ -7,8 +7,10 @@ import img12 from "../assets/facbooklogo2.png";
 function footer() {
   return (
     <footer>
-      <nav className="cursor-pointer mx-auto flex text-xs md:text-sm mt-8 min-h-full w-full justify-between relative py-2 bg-mgreen ">
-        <h3 className="text-dcream mx-5 py-2 ">&#169; NikhilbabuThachattil</h3>
+      <nav className="cursor-pointer mx-auto flex text-xs md:text-[16px] mt-8 min-h-full w-full justify-between relative py-2 bg-mgreen ">
+        <h3 className="text-dcream mx-5 py-2 my-3 ">
+          &#169; NikhilbabuThachattil
+        </h3>
         <div className="flex gap-2 mx-5">
           <a
             href="https://www.facebook.com/thachattilnikhil"
