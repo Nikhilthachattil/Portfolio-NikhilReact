@@ -19,7 +19,7 @@ function footer() {
             className="cursor-pointer py-2"
           >
             <img
-              className="w-6 h-6 md:w-8 md:h-8  rounded-full m-1"
+              className="w-6 h-6 md:w-8 md:h-8 rounded-full m-1"
               src={img12}
               alt=""
             />
@@ -31,7 +31,7 @@ function footer() {
             target="_blank"
             className="cursor-pointer py-2"
           >
-            <img className="w-6 h-6 md:w-8 md:h-8  m-1" src={img13} alt="" />
+            <img className="w-6 h-6 md:w-8 md:h-8 m-1" src={img13} alt="" />
           </a>
           <a
             href="https://www.behance.net/thachattilnikhil"
@@ -39,7 +39,7 @@ function footer() {
             target="_blank"
             className="cursor-pointer py-2"
           >
-            <img className="w-6 h-6 md:w-8 md:h-8  m-1" src={img14} alt="" />
+            <img className="w-6 h-6 md:w-8 md:h-8 m-1" src={img14} alt="" />
           </a>
           <a
             href="https://www.instagram.com/nikhilbabuthachattil/"
@@ -47,7 +47,7 @@ function footer() {
             target="_blank"
             className="cursor-pointer py-2"
           >
-            <img className="w-6 h-6 md:w-8 md:h-8  m-1" src={img15} alt="" />
+            <img className="w-6 h-6 md:w-8 md:h-8 m-1" src={img15} alt="" />
           </a>
           <a
             href="https://www.linkedin.com/in/nikhil-babu-thachattil-058158284/"
@@ -55,7 +55,7 @@ function footer() {
             target="_blank"
             className="cursor-pointer py-2"
           >
-            <img className="w-6 h-6 md:w-8 md:h-8  m-1" src={img16} alt="" />
+            <img className="w-6 h-6 md:w-8 md:h-8 m-1" src={img16} alt="" />
           </a>
         </div>
       </nav>

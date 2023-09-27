@@ -50,7 +50,7 @@ function Header() {
             <NavLink to="/Contact">
               <li
                 href="/"
-                className="px-8 py-2 text-white  border-[1px] border-green-500 rounded-lg shadow-md mb-5 hover:bg-green-500 hover:text-white"
+                className="px-8 py-2 text-white border-[1px] border-green-500 rounded-lg shadow-md mb-5 hover:bg-green-500 hover:text-white"
               >
                 Contact
               </li>
@@ -59,7 +59,7 @@ function Header() {
         </div>
         <div
           id="menu-btn"
-          className="z-30 static right-0 text-white px-5  lg:hidden py-1"
+          className="z-30 static right-0 text-white px-5 lg:hidden py-1"
         >
           <MenuBar />
         </div>

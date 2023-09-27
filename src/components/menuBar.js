@@ -75,7 +75,10 @@ function MenuBar() {
           className="z-30 static right-0 text-white px-5  lg:hidden py-5"
         >
           <img
-            onClick={() => setOpen(!open)}
+            onClick={(e) => {
+              e.preventDefault();
+              setOpen(!open);
+            }}
             ref={svgRef}
             className="w-6 h-6 cursor-pointer "
             src={img20}
