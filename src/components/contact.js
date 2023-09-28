@@ -173,9 +173,20 @@ function contact() {
             </button>
           </div>
           <div>
-            <h1 className="text-dgreen py-5 md:text-2xl mx-5 font-Satisfy">
+            <h1 className="text-dgreen py-4 md:text-2xl mx-5 font-Satisfy">
               Nikhil Babu Thachattil
             </h1>
+            <p className="text-dgreen py-2">
+              Phone: +971551227158, +918907117188
+            </p>
+            <a
+              href="mailto:thachattilnikhil@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+              className="cursor-pointer text-dgreen py-2"
+            >
+              Thachattilnikhil@gmail.com
+            </a>
           </div>
         </form>
       </div>
