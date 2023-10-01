@@ -1,8 +1,8 @@
 import React from "react";
 import img13 from "../assets/whatsapp-2.png";
-import img14 from "../assets/behance-2.png";
-import img15 from "../assets/instagram-2.png";
-import img16 from "../assets/linkedin-2.png";
+import img14 from "../assets/behance-3.png";
+import img15 from "../assets/instagram-3.png";
+import img16 from "../assets/linkedin-03.png";
 import img12 from "../assets/facbooklogo2.png";
 function footer() {
   return (
