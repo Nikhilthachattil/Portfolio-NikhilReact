@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 function Todo() {
+  // State variables
   const [isCompleteScreen, setIsCompleteScreen] = useState(false);
   const [allTodos, setTodos] = useState([]);
   const [newTitle, setNewTitle] = useState("");
   const [newDescription, setNewDescription] = useState("");
   const [completedTodos, setCompletedTodos] = useState([]);
-
+  // Event handlers
   const handleAddTodo = () => {
     const newTodoItem = {
       title: newTitle,
@@ -35,7 +36,7 @@ function Todo() {
       dd + "-" + mm + "-" + yyyy + "at" + h + ":" + m + ":" + s;
     const filteredItem = {
       ...allTodos[index],
-      completedOn: completedOn,
+      completedOn,
     };
     const updatedCompletedArr = [...completedTodos];
     updatedCompletedArr.push(filteredItem);
@@ -49,6 +50,7 @@ function Todo() {
     localStorage.setItem("completedTodos", JSON.stringify(reducedTodo));
     setCompletedTodos(reducedTodo);
   };
+  // Side effects
   useEffect(() => {
     const savedTodo = JSON.parse(localStorage.getItem("todolist"));
     const savedCompletedTodo = JSON.parse(
@@ -61,10 +63,11 @@ function Todo() {
       setCompletedTodos(savedCompletedTodo);
     }
   }, []);
+  // Render
   return (
     <section>
-      <div className=" container mt-11 flex flex-col gap-10 text-center align-middle  text-dcream md:text-md font-Dancing justify-center ">
-        <div className=" bg-mgreen  md:text-lg rounded-t-xl shadow-xl">
+      <div className=" container mt-11 flex flex-col gap-10 text-center align-middle  text-dcream md:text-md font-Dancing justify-center ">
+        <div className=" bg-mgreen  md:text-lg rounded-t-xl shadow-xl">
           <h1 className="py-2 text-dcream">TO-DO-APP</h1>
         </div>
         <div className="xl:flex flex-col bg-dred justify-between gap-3 shadow-xl">
