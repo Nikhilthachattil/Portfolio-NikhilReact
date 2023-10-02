@@ -119,18 +119,20 @@ function Profile() {
             <p className="py-1 pb-5"> &#8226; APIs</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2 px-3 py-3 w-full md:w-auto border-2 border-dcream bg-mgreen m-3 rounded-[20px] text-dcream text-xs shadow-inner">
-          <p className="pt-7 py-1">&#8226; Adobe XD</p>
-          <p className="py-1"> &#8226; Abode Illustrator</p>
-          <p className="py-1"> &#8226; Abode Photoshop</p>
-          <p className="py-1"> &#8226; Problem-Solving</p>
-          <p className="py-1"> &#8226; Communication</p>
-          <p className="py-1"> &#8226; Sass & Less</p>
-          <p className="py-1"> &#8226; VS Code Editor</p>
-          <p className="py-1"> &#8226; Command Line</p>
-          <p className="py-1"> &#8226; Windows OS</p>
-          <p className="py-1"> &#8226; Troubleshooting</p>
-          <p className="py-1 pb-5"> &#8226; JSON</p>
+        <div className="m-2">
+          <div className="flex flex-col gap-2 px-12 md:px-3 py-3 w-full md:w-auto border-2 border-dcream bg-mgreen md:m-3 rounded-[20px] text-dcream text-xs shadow-inner">
+            <p className="pt-7 py-1">&#8226; Adobe XD</p>
+            <p className="py-1"> &#8226; Abode Illustrator</p>
+            <p className="py-1"> &#8226; Abode Photoshop</p>
+            <p className="py-1"> &#8226; Problem-Solving</p>
+            <p className="py-1"> &#8226; Communication</p>
+            <p className="py-1"> &#8226; Sass & Less</p>
+            <p className="py-1"> &#8226; VS Code Editor</p>
+            <p className="py-1"> &#8226; Command Line</p>
+            <p className="py-1"> &#8226; Windows OS</p>
+            <p className="py-1"> &#8226; Troubleshooting</p>
+            <p className="py-1 pb-5"> &#8226; JSON</p>
+          </div>
         </div>
       </div>
     </section>

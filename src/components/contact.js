@@ -4,6 +4,11 @@ import img8 from "../assets/whatsapp-01.png";
 import img9 from "../assets/behance-01.png";
 import img10 from "../assets/instagram-01.png";
 import img11 from "../assets/linkedin-01.png";
+import img20 from "../assets/telegram.png";
+import img21 from "../assets/messenger.png";
+import img22 from "../assets/skype.png";
+import img23 from "../assets/twitter x.png";
+import img24 from "../assets/github.png";
 
 function contact() {
   function Submit(e) {
@@ -97,6 +102,69 @@ function contact() {
             <img
               className="w-10 h-10 bg-dcream  shadow-2xl p-1"
               src={img11}
+              alt=""
+            />
+          </a>
+        </div>
+        <div className="bg-dcream my-2 md:py-9 xs:m-5 md:m-1 flex md:flex-col justify-between md:gap-10 px-2 w-fit mx-auto lg:mx-5 text-justify place-content-center rounded-xl">
+          <a
+            href="https://telegram.me/likhin_Nikki"
+            rel="noreferrer"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <img
+              className="w-10 h-10 bg-dcream rounded-full shadow-2xl p-1"
+              src={img20}
+              alt=""
+            />
+          </a>
+
+          <a
+            href=" https://m.me/thachattilnikhil"
+            rel="noreferrer"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <img
+              className="w-10 h-10 bg-dcream  shadow-2xl p-1"
+              src={img21}
+              alt=""
+            />
+          </a>
+          <a
+            href="https://join.skype.com/invite/qz3zEdfquObT"
+            rel="noreferrer"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <img
+              className="w-10 h-10 bg-dcream  shadow-2xl p-1"
+              src={img22}
+              alt=""
+            />
+          </a>
+          <a
+            href="https://twitter.com/BabuNikhil"
+            rel="noreferrer"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <img
+              className="w-10 h-10 bg-dcream  shadow-2xl p-1"
+              src={img23}
+              alt=""
+            />
+          </a>
+          <a
+            href="https://github.com/Nikhilthachattil"
+            rel="noreferrer"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <img
+              className="w-10 h-10 bg-dcream  shadow-2xl p-1"
+              src={img24}
               alt=""
             />
           </a>
